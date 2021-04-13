@@ -11,9 +11,7 @@ In this file:
 - Running the code
 - Debugging the code
 
-*******************************
-Install Steps
-*******************************
+# Install Steps
 
 1) Download and Install NodeJS from https://nodejs.org/
    - This will also install NPM.
@@ -44,19 +42,17 @@ Install Steps
 9) Pull the project from GIT
 
 10) Run the following commands to install the node-modules (these are defined in the package-lock.json file)  
-   
-   > npm install
+    
+    > npm install
 
 11) Create the following directory which is ignored in GIT: 
 
-      \workspace
-	  \workspace\logs
+    \workspace
+    \workspace\logs
 	  
 	  
 
-*******************************
-Setup of AWS-CLI/Developer Account
-*******************************
+# Setup of AWS-CLI/Developer Account
 
 To run this project, you will need an AWS Developer account. 
 
@@ -100,29 +96,20 @@ To run this project, you will need an AWS Developer account.
    Congratulation. You are now connected!
 
    
-   
-   
-   
 
-*******************************
-COMPILING THE CODE
-*******************************
+## COMPILING THE CODE
 
 Simply type the following command in the terminal: 
 
 > tsc
 
-*******************************
-RUNNING THE CODE
-*******************************
+## RUNNING THE CODE
 
 Type the following command in the terminal: 
 
 > node dist-debug/js/Main.js
 
-*******************************
-DEBUGGING THE CODE
-*******************************
+## DEBUGGING THE CODE
 
 Notice the "launch.json" file that has been created under .vscode. This file defines the
 parameters to lauch a debug session in VSC. You can hit F5 or click on the debug icon on the left menu 
