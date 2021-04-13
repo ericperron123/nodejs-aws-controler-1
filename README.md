@@ -46,8 +46,8 @@ This controler creates a MySQL database in AWS that can be accessed from your lo
 
 11) Create the following directory which is ignored in GIT: 
 
-    > \workspace
-    > \workspace\logs
+    - \workspace
+    - \workspace\logs
 	 
 
 # Setup of AWS-CLI/Developer Account
@@ -86,10 +86,10 @@ To run this project, you will need an AWS Developer account.
 
    Here are sample values: 
 
-     Access key: AKIAIOSFODNN7EXAMPLE
-     Secret: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
-     default region name: ca-central-1 
-     Default output format: ENTER
+   - Access key: AKIAIOSFODNN7EXAMPLE
+   - Secret: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
+   - default region name: ca-central-1 
+   - Default output format: ENTER
 
    Congratulation. You are now connected!
 
