@@ -50,7 +50,8 @@ Install Steps
 11) Create the following directory which is ignored in GIT: 
 
       \workspace
-
+	  \workspace\logs
+	  
 	  
 
 *******************************
