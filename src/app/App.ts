@@ -14,7 +14,7 @@ export class App{
         
         // load the config file
         
-        await this.config.load("..\\..\\workspace\\config.txt");
+        await this.config.load("..\\..\config.txt");
 
         // initiate the logger
         Logger.SETTINGS.folderPath = this.config.data.logPath;
