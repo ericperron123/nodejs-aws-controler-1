@@ -33,47 +33,23 @@ Install Steps
 
 6) Open a Terminal Window. Terminal > New Terminal. This is where you will run commands!
 
-7) open the project's folder in Visual Studio Code. 
-
-YOU'RE ENVIRONMENT IS NOW READY!
-
--------------------------------------------------------------------------
-Here are the steps that were followed to set up the project: 
--------------------------------------------------------------------------
-
-1) Run the following command and answer the questions. You can use default values by pressing the 
+7) Run the following command and answer the questions. You can use default values by pressing the 
    ENTER.
    
    > npm init 
 
-2) Run the following commands
+8) Run the following commands
 
    > npm install -D typescript
    > npm install -D @types/express
    > npm install express
 
-3) Create a json file named tsconfig.json in the root directory  
-   (you can copy the content from the file in this project)
-   
-4) Create the following file 
-    
-      src/Main.ts
-    
-    this is the "entry point" file where the code starts from. 
+9) Pull the project from GIT
 
-5) Create the following directory: 
+11) Create the following directories which are ignored in GIT: 
 
-      dist-debug\js
-    
-    this is the folder where the typescript is compiled to javascript. 
-
-6) modify the "main" value in package.json to 
-   
-      dist-debug/js/Main.js
-
-7) Create the following file (you can copy the content from the file in this project)
- 
-    .vscode/launch.json
+      \dist-debug\js
+      \workspace
 
 
 *******************************
