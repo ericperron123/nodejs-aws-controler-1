@@ -84,7 +84,7 @@ To run this project, you will need an AWS Developer account.
 
    > aws --configure
 
-   Here are sample values: 
+   You will be asked to provide values for each of the following properties. Here are sample values: 
 
    - Access key: AKIAIOSFODNN7EXAMPLE
    - Secret: wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY
