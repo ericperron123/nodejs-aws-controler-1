@@ -1,9 +1,8 @@
-Author: ericperron.com, March 03, 2021
+**Author: ericperron.com, March 03, 2021**
 
 This controler creates a MySQL database in AWS that can be accessed from your local computer
 
-
-In this file: 
+### In this file: 
 
 - Install Steps
 - Setup of AWS-CLI/Developer Account
@@ -47,10 +46,9 @@ In this file:
 
 11) Create the following directory which is ignored in GIT: 
 
-    \workspace
-    \workspace\logs
-	  
-	  
+    > \workspace
+    > \workspace\logs
+	 
 
 # Setup of AWS-CLI/Developer Account
 
@@ -97,19 +95,19 @@ To run this project, you will need an AWS Developer account.
 
    
 
-## COMPILING THE CODE
+## Compiling the Code
 
 Simply type the following command in the terminal: 
 
 > tsc
 
-## RUNNING THE CODE
+## Running the Code
 
 Type the following command in the terminal: 
 
 > node dist-debug/js/Main.js
 
-## DEBUGGING THE CODE
+## Debugging the Code
 
 Notice the "launch.json" file that has been created under .vscode. This file defines the
 parameters to lauch a debug session in VSC. You can hit F5 or click on the debug icon on the left menu 
