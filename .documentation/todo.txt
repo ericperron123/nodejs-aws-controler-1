@@ -1,0 +1,24 @@
+
+
+Build 1 should do this; 
+
+1)	Deploy an environment with VPC, Subnets, Database, Lambda function, S3 bucket
+2)	Call the lambda function that will receive an image, save the meta data to the database and save the file to the S3 bucket. 
+3)	Call another lambda function that returns an image and its meta data. 
+4)	Undeploy the environment. 
+
+
+
+
+1) Build an environment from which an on premise application can call a database and run operations on it. 
+   a) set up vpc
+   b) set up subnets
+   c) set up secret manager
+   d) set up a database. 
+   e) Client app should be able to call that database from a on premise. 
+
+2) Build a similar environment with the addition of a Lambda function editing the database
+
+3) Build a similar environment with the addition of a EC2 load balanced server making changes to the database. 
+
+4) review environments above and see how I can manage them with CloudFormation

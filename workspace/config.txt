@@ -1,0 +1,85 @@
+
+@workspace: ..\..\workspace
+
+# ------------------------
+# LOGGER 
+# ------------------------
+
+# path can be absolute or relative to where the application was started from. 
+logPath: {workspace}\logs
+
+logLevel: DEBUG            # DEBUG|INFO|ERROR
+
+# ------------------------
+# settings for AWS CLI 
+# ------------------------
+
+
+cmdDefaults {
+
+  install {
+
+      region:  us-east-2   # ohio 
+
+      
+      vpc {
+
+        name:   ep-cmdb-vpc
+
+        routeTableRules {
+          internetGateway {
+            destination: 0.0.0.0/0  # All IPv4
+          }
+        }
+      }
+  
+      subnet1 {
+        az:   use2-az1
+        name: ep-cmdb-subnet1
+      }
+
+      subnet2 {
+        az:   use2-az2
+        name: ep-cmdb-subnet2
+      }
+
+      subnet3 {
+        az:   use2-az3
+        name: ep-cmdb-subnet3
+      }
+
+      # the database will be assigned to this subnet group
+      # the subnets above will be assigned to this subnet group. 
+
+      subnetGroup {
+        name:         ep-cmdb-subnetGroup-1
+        description:  Db Subnet group created as part of an automatic build.
+      }
+
+      
+      outputFileName: {workspace}\env.json
+  }
+
+  devSession {
+
+     outputFileName: {workspace}\db.json
+
+
+     dbSnapshotName:          ep-cmdb-ss
+     database {
+        AllocatedStorage:     20
+        DBInstanceIdentifier: ep-cmdb-db3
+        DBInstanceClass:      db.t3.micro # 0.019 per hour
+        Engine:               mysql
+        MasterUsername:       admin
+        Port:                 3306
+        DBName:               main
+        MasterUserPassword:   somepassword
+        PubliclyAccessible:   true
+        DBSubnetGroupName:    ep-cmdb-subnetgroup-1
+       # AvailabilityZone:     use2-az1
+      }
+  }
+
+
+}

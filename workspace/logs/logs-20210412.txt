@@ -1,0 +1,4 @@
+-----------------------------
+Logger Started: Mon Apr 12 2021
+-----------------------------
+17:57:23:486 [DEBUG] Console cmd: stop session

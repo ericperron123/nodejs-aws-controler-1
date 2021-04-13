@@ -1,0 +1,24 @@
+{
+  "compileOnSave": true,
+  "compilerOptions": {
+    "lib": [
+      "ES2018",
+      "dom"
+    ],
+    "typeRoots": ["node_modules/@types"],
+    "inlineSources": true,
+    "module": "commonjs",
+    "target": "ES2018",
+    "sourceMap": true,
+    "outDir": "./dist-debug/js",
+    "baseUrl": "./src",
+    "experimentalDecorators": true
+  },
+  "include": [
+    "./src/**/*",
+    "**/*.xml"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

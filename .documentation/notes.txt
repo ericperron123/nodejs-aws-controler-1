@@ -1,0 +1,29 @@
+
+Useful NPM commands
+------------------------
+
+  List of modules that were installed: 
+  
+  > npm list
+
+About AWS SDK
+------------------------
+
+AWS's SDK v3 is broken up in modules. For instance, for IAM functionalities, you need to run 
+ > npm install @aws-sdk/client-iam
+
+
+Documentation for installed packages
+------------------------------------
+
+@aws-sdk/client-ec2@3.7.0           https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/clients/
+@aws-sdk/client-iam@3.7.0           https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/clients/
+@aws-sdk/client-rds@3.7.0           https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/clients/
+@aws-sdk/client-s3@3.7.0            https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/clients/
+mysql@2.18.1
+csv-parser@3.0.0
+text-table@0.2.0                    https://www.npmjs.com/package/text-table
+subnet-cidr-calculator@1.0.8        https://www.npmjs.com/package/subnet-cidr-calculator
+
+
+
