@@ -1,6 +1,6 @@
 **Author: ericperron.com, March 03, 2021**
 
-This tool lets a developer spin up an AWS database on the fly to access during a development session. Once the dev session is over, the database can be automatically be deleted. 
+This tool lets a developer spin up an AWS database on the fly to access during a development session. Once the dev session is over, the database can automatically be deleted. 
 
 Note that this tool takes a snapshot of the database before deleting it so that the snapshot is used to restore the database on the next Developer Session. 
 
