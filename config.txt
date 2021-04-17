@@ -74,7 +74,7 @@ cmdDefaults {
         MasterUsername:       admin
         Port:                 3306
         DBName:               main
-        MasterUserPassword:   Rick-F-in-Dalton
+        MasterUserPassword:   some password here
         PubliclyAccessible:   true
         DBSubnetGroupName:    ep-cmdb-subnetgroup-1
        # AvailabilityZone:     use2-az1
